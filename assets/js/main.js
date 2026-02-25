@@ -35,13 +35,13 @@ const bandMembers = [
     {
         name: "Band Member 3",
         role: "Bass",
-        image: "/assets/img/band-member-3.jpg",
+        image: "/assets/img/IMG_20260124_174150 (4).jpg",
         bio: "The backbone of every groove, she keeps the low end tight and the crowd moving. Her smooth, melodic bass lines are the glue that holds the band together."
     },
     {
         name: "Band Member 4",
         role: "Drums",
-        image: "/assets/img/band-member-4.jpg",
+        image: "/assets/img/IMG_20260124_174150 (3).jpg",
         bio: "With precision timing and explosive energy behind the kit, he drives the band forward with a rhythm that's both powerful and deeply musical."
     }
 ];
