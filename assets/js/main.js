@@ -15,38 +15,6 @@
  */
 
 // ========================================
-// BAND MEMBERS DATA
-// ========================================
-// CUSTOMIZE: Edit this array to update band members
-// Add or remove objects to change the band roster
-const bandMembers = [
-    {
-        name: "Rozee",
-        role: "Lead Vocals",
-        image: "/assets/img/headshot.png",
-        bio: "Rozee is the heart and soul of the band, bringing powerhouse vocals and magnetic stage presence to every performance. With roots in soul and R&B, her voice is impossible to forget."
-    },
-   {
-        name: "Virginia Bistline",
-        role: "Piano",
-        image: "/assets/img/headshotsavana.png",
-        bio: "Music has been part of her life for as long as she can remember. Singing has always been her first passion, and she began playing piano at three before picking up the guitar at eleven. Now at 19, she draws inspiration from the emotion of jazz, the soul of R&B, and the timeless power of ’80s ballads."
-    },
-    {
-        name: "Band Member 3",
-        role: "Bass",
-        image: "/assets/img/IMG_20260124_174150 (4).jpg",
-        bio: "The backbone of every groove, she keeps the low end tight and the crowd moving. Her smooth, melodic bass lines are the glue that holds the band together."
-    },
-    {
-        name: "Band Member 4",
-        role: "Drums",
-        image: "/assets/img/IMG_20260124_174150 (3).jpg",
-        bio: "With precision timing and explosive energy behind the kit, he drives the band forward with a rhythm that's both powerful and deeply musical."
-    }
-];
-
-// ========================================
 // INITIALIZATION
 // ========================================
 document.addEventListener("DOMContentLoaded", function() {
@@ -241,32 +209,7 @@ function initGalleryLightbox() {
     console.log("Gallery lightbox initialized with", images.length, "images");
 }
 
-// ========================================
-// BAND MEMBERS RENDERING
-// ========================================
 
-/**
- * Render band members dynamically from bandMembers array
- */
-function initBandMembers() {
-    const bandGrid = document.getElementById('bandGrid');
-    
-    if (!bandGrid) {
-        console.warn("Band grid element not found");
-        return;
-    }
-    
-    // Clear existing content
-    bandGrid.innerHTML = '';
-    
-    // Render each band member
-    bandMembers.forEach(member => {
-        const memberCard = createBandMemberCard(member);
-        bandGrid.appendChild(memberCard);
-    });
-    
-    console.log("Band members rendered:", bandMembers.length);
-}
 
 /**
  * Create a band member card element
