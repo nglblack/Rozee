@@ -23,22 +23,26 @@ const bandMembers = [
     {
         name: "Rozee",
         role: "Lead Vocals",
-        image: "/assets/img/band-rozee.jpg" // CUSTOMIZE: Add actual image path
+        image: "/assets/img/headshot.png",
+        bio: "Rozee is the heart and soul of the band, bringing powerhouse vocals and magnetic stage presence to every performance. With roots in soul and R&B, her voice is impossible to forget."
     },
-    {
-        name: "Band Member 2",
-        role: "Guitar",
-        image: "/assets/img/band-member-2.jpg" // CUSTOMIZE: Add actual image path
+   {
+        name: "Virginia Bistline",
+        role: "Piano",
+        image: "/assets/img/headshotsavana.png",
+        bio: "Music has been part of her life for as long as she can remember. Singing has always been her first passion, and she began playing piano at three before picking up the guitar at eleven. Now at 19, she draws inspiration from the emotion of jazz, the soul of R&B, and the timeless power of ’80s ballads."
     },
     {
         name: "Band Member 3",
         role: "Bass",
-        image: "/assets/img/band-member-3.jpg" // CUSTOMIZE: Add actual image path
+        image: "/assets/img/band-member-3.jpg",
+        bio: "The backbone of every groove, she keeps the low end tight and the crowd moving. Her smooth, melodic bass lines are the glue that holds the band together."
     },
     {
         name: "Band Member 4",
         role: "Drums",
-        image: "/assets/img/band-member-4.jpg" // CUSTOMIZE: Add actual image path
+        image: "/assets/img/band-member-4.jpg",
+        bio: "With precision timing and explosive energy behind the kit, he drives the band forward with a rhythm that's both powerful and deeply musical."
     }
 ];
 
@@ -279,6 +283,7 @@ function createBandMemberCard(member) {
         </div>
         <h3 class="band-member-name">${member.name}</h3>
         <p class="band-member-role">${member.role}</p>
+        <p class="band-member-bio">${member.bio}</p>
     `;
     
     return card;
