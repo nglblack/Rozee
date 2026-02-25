@@ -1199,6 +1199,23 @@ section {
   margin-bottom: 0.5rem;
 }
 
+/* CUSTOMIZE: Adjust height to fit your footer layout */
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* CUSTOMIZE: Adjust height to fit your footer layout */
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    filter: brightness(0) saturate(100%) invert(74%) sepia(40%) saturate(400%) hue-rotate(180deg) brightness(110%);
+}
+
 /* ======================================
    RESPONSIVE DESIGN
 ====================================== */
